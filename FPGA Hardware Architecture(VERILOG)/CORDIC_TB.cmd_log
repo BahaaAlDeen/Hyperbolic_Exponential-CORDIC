@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/RTL-space/Hyperbolic-Exponential_CORDIC/VERILOG/CORDIC_TB.xst" -ofn "D:/RTL-space/Hyperbolic-Exponential_CORDIC/VERILOG/CORDIC_TB.syr" 

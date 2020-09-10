@@ -1,0 +1,2 @@
+verilog work "CORDIC_MAIN.v"
+verilog work "CORDIC_TB.v"
