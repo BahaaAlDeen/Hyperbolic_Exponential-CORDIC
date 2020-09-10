@@ -42,7 +42,7 @@ max_theta=M+N+atanh(2^(-nn))     %maximum theta
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-angle=6.9;    %input angle
+angle="Enter Radian Angle";    %input angle
 
 if angle>0 %initialized sigma
     s=1;
