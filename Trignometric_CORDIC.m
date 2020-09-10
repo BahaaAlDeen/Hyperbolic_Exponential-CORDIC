@@ -1,6 +1,6 @@
 clc; clear all; close all;
 
-rad=600;
+rad="Enter Radian Angle" ;
 
 %%%first Code 
 angle=rad*57.2958;  %input angle
