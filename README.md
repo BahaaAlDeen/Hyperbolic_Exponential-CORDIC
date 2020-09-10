@@ -1,2 +1,2 @@
 # Hyperbolic_Exponential-CORDIC
-Iterative discrete mathematical method to achieve an accurate trigonometric output.
+Iterative discrete mathematical method to achieve an accurate hyperbolic and exponential output.
