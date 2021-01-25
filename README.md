@@ -15,12 +15,12 @@ where K is the input angle, L is the coshine of the angle, M is the shine of the
 
 <img src="https://user-images.githubusercontent.com/44608585/105759062-a8483f80-5f58-11eb-89c2-f7e9f964fee6.png" width="120">
 
-The previous mathematical statement is realized in the architecture shown in Fig. 7 , where the value of M and ζ are initialized at M = 0 and ζ = 1 . The initial value for L is stated to be L =  1/Λ where:
+The previous mathematical statement is realized in the architecture shown in Fig. 1 , where the value of M and ζ are initialized at M = 0 and ζ = 1 . The initial value for L is stated to be L =  1/Λ where:
 
 <img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="300">
 
-Consequently ranges of μ and λ given as ( a ) and ( b) respectively instate the value of the initial condition L 0 =  1 , giving a proper range for the maximum angle  max to be applied without losing needed accuracy as:
-
+Consequently ranges of μ and λ given as ( a ) and ( b) respectively instate the value of the initial condition L = 1/Λ , giving a proper range for the maximum angle  max to be applied without losing needed accuracy as:
+ 
 <img src="https://user-images.githubusercontent.com/44608585/105760967-27d70e00-5f5b-11eb-8b02-f6f03e77b184.png" width="400">
 
 where lowering the maximum angle  max limit will decrease the iteration period of the CORDIC system and in turn decrease the complexity of the whole system.
@@ -32,10 +32,11 @@ Table.1 (Source: https://doi.org/10.1016/j.chaos.2020.110493)
 To use this function simply clone the function file 'Mathematical Concept(MATLAB).m', and run the matlab script. See the comments within this file for more details on how to experiment with the different variables in this function. 
 
 
-    input: 	'rad' is the oinput angle in radian.
+    input: 	'angle' is the input angle in radian.
 
-    out: 	'COS' cosine of the input angle.
-         	'SIN' sine of the input angle.
+    out: 	'COSH' cosine of the input.
+         	'SINH' sine of the input.
+         	'EXP' exponential of the input.
 
 
 
@@ -47,11 +48,11 @@ As depicted in Fig. 1 to optimize the architecture, the values of tanh− 1 (1 �
 Fig.1 (Source: https://doi.org/10.1016/j.chaos.2020.110493)
 
 ## How to use
-To use this function simply clone the file 'CORDIC_MAIN.v', and run the verilog script. Use the file 'CORDIC_TB.v' as a test bench to test an input angle and the output of the trignometric process. See the comments within this file for more details on how to experiment with the different variables in this function. 
+To use this function simply clone the file 'CORDIC_MAIN.v', and run the verilog script. Use the file 'CORDIC_TB.v' as a test bench to test an input and the output of the Hyperbolic/Exponential process. See the comments within this file for more details on how to experiment with the different variables in this function. 
 
 
-    input: 	'rad' is the input angle in radian multiplied by 2^16  (32-bits = 16.16 = 16-bits for integer . 16-bits for fractional).
+    input: 	'angle' is the input multiplied by 2^16  (32-bits = 16.16 = 16-bits for integer . 16-bits for fractional).
 
-    out: 	'COS' cosine of the input angle (32-bits).
-         	'SIN' sine of the input angle (32-bits).
-
+    out: 	'COSH' cosine of the input (32-bits).
+         	'SINH' sine of the input (32-bits).
+         	'EXP' exponential of the input (32-bits).
