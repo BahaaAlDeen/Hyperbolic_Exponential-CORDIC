@@ -1,6 +1,6 @@
 % clc; clear all; close all;
 
-angle="Enter Angle";
+angle="Enter input";
 
 if angle>0
     s=1;
