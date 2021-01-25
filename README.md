@@ -15,7 +15,7 @@ where K is the input angle, L is the coshine of the angle, M is the shine of the
 
 <img src="https://user-images.githubusercontent.com/44608585/105759062-a8483f80-5f58-11eb-89c2-f7e9f964fee6.png" width="120">
 
-The previous mathematical statement is realized in the architecture shown in Fig. 7 , where the value of M and ζ are initialized at M 0 = 0 and ζ = 1 . The initial value for L is stated to be L 0 =  1 where:
+The previous mathematical statement is realized in the architecture shown in Fig. 7 , where the value of M and ζ are initialized at M = 0 and ζ = 1 . The initial value for L is stated to be L =  1/Λ where:
 
 <img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="300">
 
