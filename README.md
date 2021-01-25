@@ -5,7 +5,7 @@ Iterative discrete mathematical method to achieve an accurate hyperbolic and exp
 
 The Hyperbolic/Exponential system is realized by using the CORDIC system achieving an iterative mathematical approximation given by [[1]](https://doi.org/10.1016/j.chaos.2020.110493) :
 
-<img src="https://user-images.githubusercontent.com/44608585/105756767-b6489100-5f55-11eb-9595-8ab7e9d0b96f.png" width="250">
+<img src="https://user-images.githubusercontent.com/44608585/105756767-b6489100-5f55-11eb-9595-8ab7e9d0b96f.png" width="220">
 
 where the index λ is the iteration index for the previous set of equations, which increment from an out-most negative value λ = −b  at each iteration for λ < 0 till λ = 0 . After the stated set of equations are iterated for the index λ till λ = 0 , another set comes with an incremental iteration given by:
 
