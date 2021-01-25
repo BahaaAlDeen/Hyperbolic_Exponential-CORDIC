@@ -17,11 +17,11 @@ where K is the input angle, L is the coshine of the angle, M is the shine of the
 
 The previous mathematical statement is realized in the architecture shown in Fig. 7 , where the value of M and ζ are initialized at M 0 = 0 and ζ = 1 . The initial value for L is stated to be L 0 =  1 where:
 
-<img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="120">
+<img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="200">
 
 Consequently ranges of μ and λ given as ( a ) and ( b) respectively instate the value of the initial condition L 0 =  1 , giving a proper range for the maximum angle  max to be applied without losing needed accuracy as:
 
-<img src="https://user-images.githubusercontent.com/44608585/105760967-27d70e00-5f5b-11eb-8b02-f6f03e77b184.png" width="120">
+<img src="https://user-images.githubusercontent.com/44608585/105760967-27d70e00-5f5b-11eb-8b02-f6f03e77b184.png" width="200">
 
 where lowering the maximum angle  max limit will decrease the iteration period of the CORDIC system and in turn decrease the complexity of the whole system.
 
@@ -30,13 +30,8 @@ where lowering the maximum angle  max limit will decrease the iteration period o
 
 
 
-As depicted in Fig. 7 to optimize the architecture, the values of tanh− 1 (1 −2 λn −2 ) and 1 −2 n −2 are stated in LUTs accessed by the index λ, which constitutes the ﬁrst iteration period. Then the values of tan −1 (2 −μn ) and 2 − n stated in the LUTs shown in Fig. 7 are selected by the state of the index μ, which represent the second iteration period. As shown in Fig. 7 both the index λ and μ are bounded by a limit λ ≤ b and μ ≤ a deﬁned as comparators, where ( b) and ( a ) are calculated as ( b = 6 ) and ( a = 8 ). After a number of iterations ( λ = b) then ( μ = a ) amounting to a total of (a + b) iterations, the ﬁnal value of L n +1 and M n +1 should give the coshine and the shine of the given angle respectively. Eventually, The exponential value needed is calculated by adding the values of the coshine L n +1 and the shine M n +1 outputs. The values set for the designed CORDIC architecture variables and their initial conditions are shown in Table 3 . 
 
 
-
-
-
-The mathematical statement is realized in the architecture shown in Fig. 1, where the initial value for B amount to a scaling factor estimated to be B=0.6072 , the value of C and ζ are initialized at C=0 and ζ=1. As shown in Fig. 1 the index μ is bounded by a limit (μ≤a) defined as a comparator, where (a) is estimated optimally as (a=13) [[1]](https://doi.org/10.1016/j.chaos.2020.110493). 
 
 <img src="https://user-images.githubusercontent.com/44608585/105723646-af0e8c80-5f2f-11eb-9a10-868e32c566e4.png" width="500">
 Table.1 (Source: https://doi.org/10.1016/j.chaos.2020.110493)
@@ -54,7 +49,7 @@ To use this function simply clone the function file 'Mathematical Concept(MATLAB
 
 # FPGA Hardware Architecture(VERILOG)
 
-To optimize the architecture, the values of <img src="https://user-images.githubusercontent.com/44608585/105716962-348e3e80-5f28-11eb-9324-511173801623.png" width="80"> and <img src="https://user-images.githubusercontent.com/44608585/105719993-9308ec00-5f2b-11eb-9070-2a1c28cc0cc0.png" width="30"> are stated in LUTs as shown in Fig. 1, selected by the state of the μ index . Eventually, the final value of B and C should give the cosine and the sine of the given angle, respectively, after a number of iterations (μ = a). The values set for the designed architecture variables and their initial conditions are depicted in Table.1 . A comprehensive repository is realized with a software for the trigonometric CORDIC mathematical expression and hardware architecture [[1]](https://doi.org/10.1016/j.chaos.2020.110493).
+As depicted in Fig. 7 to optimize the architecture, the values of tanh− 1 (1 −2 λn −2 ) and 1 −2 n −2 are stated in LUTs accessed by the index λ, which constitutes the ﬁrst iteration period. Then the values of tan −1 (2 −μn ) and 2 − n stated in the LUTs shown in Fig. 7 are selected by the state of the index μ, which represent the second iteration period. As shown in Fig. 7 both the index λ and μ are bounded by a limit λ ≤ b and μ ≤ a deﬁned as comparators, where ( b) and ( a ) are calculated as ( b = 6 ) and ( a = 8 ). After a number of iterations ( λ = b) then ( μ = a ) amounting to a total of (a + b) iterations, the ﬁnal value of L n +1 and M n +1 should give the coshine and the shine of the given angle respectively. Eventually, The exponential value needed is calculated by adding the values of the coshine L n +1 and the shine M n +1 outputs. The values set for the designed CORDIC architecture variables and their initial conditions are shown in Table 3 .  [[1]](https://doi.org/10.1016/j.chaos.2020.110493).
 
 <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0960077920308857-gr6.jpg" width="400">
 Fig.1 (Source: https://doi.org/10.1016/j.chaos.2020.110493)
