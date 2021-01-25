@@ -11,15 +11,9 @@ where the index λ is the iteration index for the previous set of equations, whi
 
 <img src="https://user-images.githubusercontent.com/44608585/105757706-fd835180-5f56-11eb-8b05-5a1085414752.png" width="200">
 
-
-
-
-
-
-
-
 where K is the input angle, L is the coshine of the angle, M is the shine of the input angle. The index μ is the iteration index incremented at μ > 0 till μ = a and the variable ζ is either 1 or -1 depending on the value of K from the previous iteration, where the ζ condition is applied to both sets of equations in both ranges as:
 
+<img src="https://user-images.githubusercontent.com/44608585/105759062-a8483f80-5f58-11eb-89c2-f7e9f964fee6.png" width="200">
 
 
 
