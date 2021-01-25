@@ -17,7 +17,7 @@ where K is the input angle, L is the coshine of the angle, M is the shine of the
 
 The previous mathematical statement is realized in the architecture shown in Fig. 7 , where the value of M and ζ are initialized at M 0 = 0 and ζ = 1 . The initial value for L is stated to be L 0 =  1 where:
 
-<img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="400">
+<img src="https://user-images.githubusercontent.com/44608585/105760691-d75fb080-5f5a-11eb-919c-0a080517034b.png" width="300">
 
 Consequently ranges of μ and λ given as ( a ) and ( b) respectively instate the value of the initial condition L 0 =  1 , giving a proper range for the maximum angle  max to be applied without losing needed accuracy as:
 
