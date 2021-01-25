@@ -125,7 +125,7 @@ end        //initialization 1
 else begin //initialization 2
 
 ////////////////////////////////////////// initialized values for recursive clock
-
+angle=??  //fix((angle)*2^16
 x=ScalingFactor;   //input x
 y=0;               //input y
 z=angle;
