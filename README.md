@@ -5,11 +5,23 @@ Iterative discrete mathematical method to achieve an accurate hyperbolic and exp
 
 The Hyperbolic/Exponential system is realized by using the CORDIC system achieving an iterative mathematical approximation given by [[1]](https://doi.org/10.1016/j.chaos.2020.110493) :
 
-<img src="https://user-images.githubusercontent.com/44608585/105712967-3a355580-5f23-11eb-990c-2801856c35f0.png" width="200">
+<img src="https://user-images.githubusercontent.com/44608585/105756767-b6489100-5f55-11eb-9595-8ab7e9d0b96f.png" width="200">
 
-where A is the input angle, B is the cosine of the angle, C is the sine of the input angle. The index ζ is the iteration index and the variable ζ is either 1 or -1 depending on the value of  from the previous iteration where:
+where the index λ is the iteration index for the previous set of equations, which increment from an out-most negative value λ = −b  at each iteration for λ < 0 till λ = 0 . After the stated set of equations are iterated for the index λ till λ = 0 , another set comes with an incremental iteration given by:
 
-<img src="https://user-images.githubusercontent.com/44608585/105713342-b3cd4380-5f23-11eb-8788-6f1a3c931683.png" width="120">
+<img src="https://user-images.githubusercontent.com/44608585/105757706-fd835180-5f56-11eb-8b05-5a1085414752.png" width="120">
+
+
+where K is the input angle, L is the coshine of the angle, M is the shine of the input angle. The index μ is the iteration index incremented at μ > 0 till μ = a and the variable ζ is either 1 or -1 depending on the value of K from the previous iteration, where the ζ condition is applied to both sets of equations in both ranges as:
+
+
+
+
+
+
+
+
+
 
 
 The mathematical statement is realized in the architecture shown in Fig. 1, where the initial value for B amount to a scaling factor estimated to be B=0.6072 , the value of C and ζ are initialized at C=0 and ζ=1. As shown in Fig. 1 the index μ is bounded by a limit (μ≤a) defined as a comparator, where (a) is estimated optimally as (a=13) [[1]](https://doi.org/10.1016/j.chaos.2020.110493). 
