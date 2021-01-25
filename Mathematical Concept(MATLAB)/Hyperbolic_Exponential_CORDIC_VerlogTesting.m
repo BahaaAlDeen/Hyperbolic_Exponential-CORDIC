@@ -1,6 +1,6 @@
 % clc; clear all; close all;
 
-angle="Enter Radian Angle";
+angle="Enter Angle";
 
 if angle>0
     s=1;
