@@ -25,15 +25,7 @@ Consequently ranges of μ and λ given as ( a ) and ( b) respectively instate th
 
 where lowering the maximum angle  max limit will decrease the iteration period of the CORDIC system and in turn decrease the complexity of the whole system.
 
-
-
-
-
-
-
-
-
-<img src="https://user-images.githubusercontent.com/44608585/105723646-af0e8c80-5f2f-11eb-9a10-868e32c566e4.png" width="500">
+<img src="https://user-images.githubusercontent.com/44608585/105772264-98395b80-5f6a-11eb-84ca-7049574316a2.png" width="500">
 Table.1 (Source: https://doi.org/10.1016/j.chaos.2020.110493)
 
 ## How to use
